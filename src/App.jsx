@@ -1,9 +1,7 @@
 import './App.css'
 
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Stage, useGLTF, MeshTransmissionMaterial, Environment, Edges } from '@react-three/drei'
-
-import * as THREE from 'three'
+import { OrbitControls, Stage, useGLTF, MeshTransmissionMaterial, Edges } from '@react-three/drei'
 
 function App() {
 
@@ -38,7 +36,6 @@ function GlassMaterial() {
         color={'#1fb4ff'}
         bg={'#212121'}
         attenuationColor={'#ffffff'}
-        chromaticAberration={0}
       />
       <Edges color="white"/>
     </>
@@ -52,7 +49,6 @@ function NormalMaterial() {
         transparent={true}
         opacity={0.5}
       />
-      <Edges color="white"/>
     </>
   )
 }

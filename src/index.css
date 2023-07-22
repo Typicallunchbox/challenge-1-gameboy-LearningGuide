@@ -22,3 +22,8 @@
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.5);
 }
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
