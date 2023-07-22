@@ -1,7 +1,7 @@
 import './App.css'
 
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Stage, useGLTF, MeshTransmissionMaterial, Edges } from '@react-three/drei'
+import { OrbitControls, Center, useGLTF, MeshTransmissionMaterial, Edges, Environment, Shadow } from '@react-three/drei'
 
 function App() {
 
@@ -16,14 +16,10 @@ function App() {
         autoRotate={ true }
         autoRotateSpeed={ -2 }
       />
-      <Stage
-        shadows={ { type: 'contact', opacity: 0.8, blur: 3 } }
-        preset={ 'rembrandt' }
-        adjustCamera={ false }
-        environment={ 'night' }
-      >
+      <Environment files="./environment.hdr" />
+      <Center>
         <GameBoy/>
-      </Stage>
+      </Center>
      </Canvas>
     </>
   )
@@ -36,6 +32,7 @@ function GlassMaterial() {
         color={'#1fb4ff'}
         bg={'#212121'}
         attenuationColor={'#ffffff'}
+        envMapIntensity={100}
       />
       <Edges color="white"/>
     </>
