@@ -8,7 +8,6 @@ function App() {
   return (
     <>
      <Canvas>
-      <ambientLight intensity={ 5.5 } />
       <OrbitControls
         minDistance={ 20 }
         maxPolarAngle={ Math.PI / 2 }
