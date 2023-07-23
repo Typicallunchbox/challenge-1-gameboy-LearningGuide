@@ -32,7 +32,7 @@ function GlassMaterial() {
         color={'#1fb4ff'}
         bg={'#212121'}
         attenuationColor={'#ffffff'}
-        envMapIntensity={100}
+        envMapIntensity={10}
       />
       <Edges color="white"/>
     </>
