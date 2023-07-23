@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 
 console.log(`
-  *** Gameboy Model created by https://sketchfab.com/a.stark and lisenced under CC Attribution ***
+  *** Gameboy Model created by https://sketchfab.com/thegraphicsgeek and lisenced under CC Attribution ***
 `)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
